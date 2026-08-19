@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArtScape_India — Interactive Provenance Map of Indian Art</title>
+  <meta name="description" content="Explore archaeological and geographic origins of Indian art artifacts across the subcontinent on an interactive geospatial map.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">✦</span> ArtScape_India <span class="brand-sub">· Indian Art Provenance</span>
+    </a>
+    <nav>
+      <button id="resetMapBtn" class="btn btn-ghost btn-sm" title="Fit map to all locations">↺ Reset View</button>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle Dark/Light Mode">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">GEOGRAPHIC PROVENANCE &amp; ARCHAEOLOGY</p>
+      <h1>Art across the <em>subcontinent</em></h1>
+      <p>
+        India's artistic evolution is regional as well as chronological. Select any artifact pin on the map to inspect its geographical origins, medium, historical context, and archaeological significance.
+      </p>
+    </section>
+
+    <!-- Interactive Filter Toolbar -->
+    <section class="section filter-toolbar-section">
+      <div class="filter-toolbar">
+        <div class="filter-dropdowns">
+          <div class="select-wrap">
+            <label for="eraFilter" class="sr-only">Filter by Era</label>
+            <select id="eraFilter" class="filter-select">
+              <option value="all">All Eras &amp; Periods</option>
+              <option value="Ancient">Ancient Era</option>
+              <option value="Medieval">Medieval Era</option>
+              <option value="Mughal">Mughal / Early Modern</option>
+              <option value="Colonial & Modern">Colonial &amp; Modern</option>
+              <option value="Folk & Tribal">Folk &amp; Tribal</option>
+            </select>
+          </div>
+
+          <div class="select-wrap">
+            <label for="regionFilter" class="sr-only">Filter by Region</label>
+            <select id="regionFilter" class="filter-select">
+              <option value="all">All Regions</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-stats">
+          <span id="artifactCountBadge" class="count-badge">Showing 22 of 22 locations</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map & Interactive Sidebar Layout -->
+    <section class="section map-layout">
+      <div class="map-container-wrap">
+        <div id="leafletMap" class="leaflet-map-view"></div>
+        <div class="map-overlay-hint">
+          <span>💡 Click any numbered pin to inspect provenance &amp; full historical record</span>
+        </div>
+      </div>
+
+      <aside id="mapInfo" class="map-info">
+        <div class="map-info-placeholder">
+          <p class="eyebrow">SELECT A PIN ON THE MAP</p>
+          <h2>Explore Regional Traditions</h2>
+          <p>
+            Choose any numbered pin on the interactive map or from the directory below to inspect the artifact replica, geographic provenance, archaeological context, and high-resolution records.
+          </p>
+          <div class="quick-tips">
+            <div class="tip-item">
+              <span class="tip-icon">📍</span>
+              <div>
+                <strong>22 Archeological Sites</strong>
+                <p>Spanning from the Bronze Age Indus Valley to Modernist movements.</p>
+              </div>
+            </div>
+            <div class="tip-item">
+              <span class="tip-icon">🏛️</span>
+              <div>
+                <strong>Curated Heritage</strong>
+                <p>Sculptures, rock-cut shrines, mural paintings, temple architecture, and textiles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Location Directory Section -->
+    <section class="section directory-section">
+      <div class="directory-header">
+        <div>
+          <p class="eyebrow">EXPLORE BY LOCATION</p>
+          <h2>Provenance Directory</h2>
+        </div>
+        <span class="directory-sub">Click any entry to focus the map</span>
+      </div>
+      <div id="pinsDirectory" class="pins-directory-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>✦ <strong>ArtScape_India</strong> · Interactive Geographic Provenance of Indian Art</span>
+    <span>Tiles &copy; OpenStreetMap contributors · Open Educational Resource</span>
+  </footer>
+
+  <!-- Leaflet & App Scripts -->
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/artifacts.js"></script>
+  <script src="js/subcontinent-geo.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>

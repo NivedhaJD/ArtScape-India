@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ancient",
+    "label": "Ancient",
+    "dateRange": "c. 2500 BCE – 8th century CE",
+    "description": "From the earliest urban civilization of the Indus Valley through the Mauryan, Gupta and post-Gupta periods. This era produced some of India's most enduring sculpture, architecture and mural traditions.",
+    "color": "#b37a42",
+    "periods": [
+      { "name": "Indus Valley Civilization", "circa": "c. 2500–1900 BCE" },
+      { "name": "Mauryan Period", "circa": "c. 322–185 BCE" },
+      { "name": "Mauryan–Shunga Period", "circa": "c. 3rd BCE – 1st CE" },
+      { "name": "Buddhist Art", "circa": "c. 2nd BCE – 6th CE" },
+      { "name": "Gupta Period", "circa": "c. 320–550 CE" },
+      { "name": "Post-Gupta Period", "circa": "c. 5th–8th century CE" },
+      { "name": "Rashtrakuta Period", "circa": "c. 753–982 CE" }
+    ]
+  },
+  {
+    "id": "medieval",
+    "label": "Medieval",
+    "dateRange": "c. 9th – 18th century CE",
+    "description": "Marked by the rise of regional kingdoms and their distinctive artistic programmes — from Chola bronzes and Dravidian temple architecture to Chandela temples, Mughal painting and Rajput miniature traditions.",
+    "color": "#8b5e3c",
+    "periods": [
+      { "name": "Chola Dynasty", "circa": "c. 850–1279 CE" },
+      { "name": "Chandela Period", "circa": "c. 831–1308 CE" },
+      { "name": "Eastern Ganga Period", "circa": "c. 1078–1434 CE" },
+      { "name": "Vijayanagara Empire", "circa": "c. 1336–1646 CE" },
+      { "name": "Mughal Period", "circa": "c. 1526–1858 CE" },
+      { "name": "Rajput Painting Traditions", "circa": "c. 16th–19th centuries" },
+      { "name": "Pahari Painting Traditions", "circa": "c. 17th–19th centuries" }
+    ]
+  },
+  {
+    "id": "modern",
+    "label": "Modern",
+    "dateRange": "c. 1850 – 1950 CE",
+    "description": "A period of profound transformation driven by colonial encounter, nationalist movements and the search for an Indian modernity in art. Includes the Bengal School, Company painting and the pioneering generation of Amrita Sher-Gil.",
+    "color": "#5c7a6b",
+    "periods": [
+      { "name": "Colonial Transitional Period", "circa": "Late 18th–19th centuries" },
+      { "name": "Bengal School", "circa": "c. 1890s–1940s" },
+      { "name": "Modern Indian Art", "circa": "c. 1930s–1960s" }
+    ]
+  },
+  {
+    "id": "contemporary",
+    "label": "Contemporary",
+    "dateRange": "c. 1947 – present",
+    "description": "Post-independence India produced a rich range of art practice: from the Progressive Artists' Group's engagement with international modernism to living folk traditions such as Madhubani and Warli, and globally circulating contemporary art.",
+    "color": "#4a6a8a",
+    "periods": [
+      { "name": "Mithila Folk Tradition", "circa": "Traditional, documented from mid-20th century" },
+      { "name": "Warli Tribal Tradition", "circa": "Traditional, documented from 20th century" },
+      { "name": "Contemporary Art", "circa": "c. 1980s – present" }
+    ]
+  }
+]

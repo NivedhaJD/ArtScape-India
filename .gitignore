@@ -1,0 +1,30 @@
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Python Cache (from local helper server)
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Local Environment & Logs
+*.log
+.env
+.env.local
+.cache/
+.temp/
+.tmp/
