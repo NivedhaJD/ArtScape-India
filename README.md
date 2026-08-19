@@ -1,4 +1,4 @@
-# ✦ ArtScape_India — Interactive Provenance Map of Indian Art
+# ArtScape_India — Interactive Provenance Map of Indian Art
 
 An interactive geospatial exploration of India's artistic evolution, archaeological milestones, and regional traditions spanning over 4,500 years.
 
